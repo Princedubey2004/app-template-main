@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { Check } from "lucide-react"
@@ -56,7 +57,7 @@ export default function PricingPage() {
                   <span className="text-sm font-semibold leading-6 tracking-wide text-muted-foreground">USD</span>
                 </p>
                 <Button className="mt-10 w-full" size="lg" asChild>
-                  <a href="/signup">Get access</a>
+                  <Link href="/signup">Get access</Link>
                 </Button>
                 <p className="mt-6 text-xs leading-5 text-muted-foreground">
                   Invoices and receipts available for easy company reimbursement
