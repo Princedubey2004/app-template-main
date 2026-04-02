@@ -2,6 +2,8 @@ import { getBillingDataByUserId } from "@/actions/customers"
 import { auth } from "@clerk/nextjs/server"
 import { AlertCircle, CreditCard } from "lucide-react"
 
+export const dynamic = "force-dynamic"
+
 export default async function BillingPage() {
   const { userId } = await auth()
 

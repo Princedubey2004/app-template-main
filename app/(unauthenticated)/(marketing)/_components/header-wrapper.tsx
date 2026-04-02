@@ -3,6 +3,8 @@ import { SelectCustomer } from "@/db/schema/customers"
 import { currentUser } from "@clerk/nextjs/server"
 import { Header } from "./header"
 
+export const dynamic = "force-dynamic"
+
 export async function HeaderWrapper() {
   const user = await currentUser()
   let membership: SelectCustomer["membership"] | null = null
